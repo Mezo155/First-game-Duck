@@ -34,7 +34,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(/assets/img/letras-duck-hunt.jpg);
+    background-image: url(./assets/img/letras-duck-hunt.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
