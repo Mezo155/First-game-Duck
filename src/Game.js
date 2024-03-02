@@ -80,7 +80,7 @@ class Game {
         const gameOverContainer = document.createElement("div");
         gameOverContainer.classList.add("game-over-container");
         const gameOverImg = document.createElement("img");
-        gameOverImg.src = "/assets/img/gameOver.png";
+        gameOverImg.src = "./assets/img/gameOver.png";
 
         const restartButton = document.createElement("button");
         restartButton.classList.add("button");
