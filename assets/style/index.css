@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+body {
+    margin: 0;
+   /* cursor: none; */
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+}
+.game-board-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+}
+.board-container {
+    width: 80vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://bit.ly/2Q4q14a);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    cursor: none;
+
+}
+.start-container {
+    width: 80vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/assets/img/letras-duck-hunt.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+#start-button {
+    font-family: "Pixelify Sans", sans-serif;
+    cursor: pointer;
+    background-color:#0077CC;
+    color: #F3B834;
+    border: none;
+    font-size: 21px;
+    font-weight: bold;
+    height: 30px;
+    border-radius: 10px;
+    width: 200px;
+    transition: background-color 0.3s ease;
+}
+#start-button:hover {
+    background-color: #00F0FD;
+    color: white;
+}
+
+.time-counter {
+color: white;
+height: 450px;
+
+}
+.game-over-container {
+    position: absolute;
+}
+.game-over-container button {
+    font-family: "Pixelify Sans", sans-serif;
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translateX(-50%);
+    background-color: #00F0FD;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
