@@ -78,3 +78,18 @@ height: 450px;
     padding: 10px 20px;
     border-radius: 5px;
 }
+.button:hover {
+    background-color: #00F0FD;
+    color: white; 
+}
+.button {
+    cursor: pointer;
+    background-color:#0077CC;
+    color: #F3B834;
+    border: none;
+    font-size: 21px;
+    font-weight: bold;
+    border-radius: 10px;
+    width: 200px;
+    transition: background-color 0.3s ease; 
+}

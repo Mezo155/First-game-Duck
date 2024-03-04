@@ -5,7 +5,7 @@ class Pointer {
     this.width = 70;
     this.color = color;
     this.img = "url(./assets/img/Punto2.png)";
-    this.lives = 4;
+    this.lives = 3;
 
     this.element = document.createElement("div");
     this.element.style.background = this.img;

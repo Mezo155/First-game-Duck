@@ -1,11 +1,11 @@
 class Enemy {
-    constructor(container, vxIncrease){
+    constructor(container){
         this.container = container;
         this.height = 80;
         this.width = 80;
         this.color = "transparent";
         this.x = -this.width;
-        this.vx = 10;
+        this.vx = 5;
         this.y = Math.floor(Math.random() * (300 - 50 + 1)) + 50;
         this.vy = 0;
         this.maxHeight = 355
@@ -17,7 +17,14 @@ class Enemy {
         this.currentFrame = 0
         this.collisionSprite = "./assets/img/Die.png";
         this.element = document.createElement("div");
+        this.start();
         
+    }
+
+    start(){
+        this.intevalId = setInterval(() => {
+            this.currentFrame = (this.currentFrame + 1) % this.spriteImages.length;
+        }, 100);
     }
 
     draw(){
@@ -41,9 +48,9 @@ class Enemy {
     move(){
         this.x += this.vx;
         this.y += this.vy;
-        this.currentFrame = (this.currentFrame + 1) % this.spriteImages.length;
         if (this.vy === 10 && this.y > this.maxHeight){
             this.element.style.display = "none";
+            
         }
     }
     update(){
